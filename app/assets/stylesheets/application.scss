@@ -11,6 +11,10 @@
  * It is generally better to create a new file per style scope.
  *
  * 
- @import 'bootstrap';
+*= require_self
+*= require_tree .
+*= require 'w3'
+*= require 'quetzal_green-theme'
+*= require 'custom'
  */
-@import 'bootstrap';
+

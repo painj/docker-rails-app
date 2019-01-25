@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+    </style>
+    <body class="w3-theme">
+
+        <!-- Navigation Bar -->
+        <%= render 'layouts/frontend_nav' %>
+        <!-- Header -->
+        <%= render 'layouts/frontend_header' %>
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:1532px;">
+
+            <%= render 'layouts/frontend_page_rooms' %>
+            <%= render 'layouts/frontend_page_about' %>
+            <%= render 'layouts/frontend_page_notice' %>
+            <%= render 'layouts/frontend_page_interests' %>
+            <%= render 'layouts/frontend_page_newsletter' %>
+            <%= render 'layouts/frontend_page_contact' %>
+            <!-- End page content -->
+        </div>
+
+        <!-- Footer -->
+        <%= render 'layouts/frontend_page_footer' %>
+        <!-- Add Google Maps -->
+        <%= render 'layouts/frontend_page_script_google' %>
+    </body>
+</html>

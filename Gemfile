@@ -19,6 +19,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap', '~> 4.0.0'
 gem 'bootswatch-sprockets'
 gem 'jquery-rails'
+gem "comfy_bootstrap_form", "~> 4.0.0"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

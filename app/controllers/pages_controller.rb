@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  layout 'frontend'
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
   # GET /pages
